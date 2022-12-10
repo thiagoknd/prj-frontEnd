@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Loja</title>
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #banner{
+            background-color: black;
+            padding: 30px 300px  30px 300px;
+            width: 100%;
+            position: fixed;
+            top: 0px;
+            
+
+        }
+        #banner img{
+            width: 80px;
+            float: left;
+            margin-right: 30px;
+        }
+        #banner h1{
+            color: white;
+            margin-top: 20px;
+        }
+
+        #container{
+            margin: 30px 300px 0px 300px;
+            padding-top: 80px;
+            
+        }
+        .produto:hover{
+            border: solid lightcoral 3px;
+        }
+        .titulo{
+            margin-bottom: 20px;
+        }
+        .produto{
+            border: solid black 3px;
+            width: 280px;
+            height: 240px;
+            float: left;
+            margin-right: 15px;
+            margin-bottom: 20px;
+            cursor: pointer;
+
+            
+         
+        }
+        .produto-selecionado{
+            border-color: lightgray;
+        }
+        .produto img{
+            width: 70%;
+            margin-left: 15%;
+        }
+        .produto .nome{
+            background-color: lightcoral;
+            color: black;
+            height: 8%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .produto .valor{
+            background-color: lightgray;
+            height: 8.5%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #btn-fixo, #btn-fixo span{
+            background-color: lightcoral;
+            color: black;
+            width: 80px;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            border: solid black 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 10%;
+            
+        }
+        #btn-fixo span{
+            background-color: black;
+            color: lightcoral;
+            bottom: 100px;
+            right: 11%;
+            height: 20px;
+            width: 20px;
+        }
+    </style>
+    <div id="banner">
+        <img src="imagens/logo.jpg" alt="">
+        <h1>Sneaker Store</h1>
+    </div>
+    <div id="container">
+        
+        <h2 class="titulo" >Produtos</h2>
+        <div class="ls-produto">
+            <div class="produto" onclick="addCarrinho(this)">
+                <img src="imagens/tenisNike.jpg" alt="">
+                <p class="nome">Tenis Nike</p>
+                <p class="valor">Valor: R$ 000</p>
+            </div>
+            <div class="produto">
+                <img src="imagens/tenisAdidas.jpg" alt="">
+                <p class="nome">Tenis Adidas</p>
+                <p class="valor">Valor: R$ 000</p>
+            </div>
+    
+    
+            <div class="produto">
+                <img src="imagens/tenisMizuno.jpg" alt="">
+                <p class="nome">Tenis Mizuno</p>
+                <p class="valor">Valor: R$ 000</p>
+            </div>
+            <div class="produto">
+                <img src="imagens/tenisPuma.jpg" alt="">
+                <p class="nome">Tenis Puma</p>
+                <p class="valor">Valor: R$ 000</p>
+            </div>
+    
+            <div class="produto">
+                <img src="imagens/tenisFila.jpg" alt="">
+                <p class="nome">Tenis Fila</p>
+                <p class="valor">Valor: R$ 000</p>
+            </div>
+            <div class="produto">
+                <img src="imagens/tenisOlimp.jpg" alt="">
+                <p class="nome">Tenis Olympikus</p>
+                <p class="valor">Valor: R$ 000</p>
+            </div>
+    
+    
+            <div class="produto">
+                <img src="imagens/tenisUnder.jpg" alt="">
+                <p class="nome">Tenis Under</p>
+                <p class="valor">Valor: R$ 000</p>
+            </div>
+            <div class="produto">
+                <img src="imagens/tenisJordan.jpg" alt="">
+                <p class="nome">Tenis Jordan</p>
+                <p class="valor">Valor: R$ 000</p>
+            </div>
+        </div>
+        <div id="btn-fixo">
+            <div id="btn-principal">
+                <i class="fa fa-shopping-cart" style="font-size:36px"></i>
+                <span id="qt-produto">0</span>
+            </div>
+        </div>
+        
+    </div>
+
+    <script>
+        function addCarrinho(elemento){
+            if(elemento.classList.length == 2){
+                document.getElementById("qt-produto").innerHTML = 0;
+                elemento.classList.remover("produto-selecionado");
+            }else{
+                document.getElementById("qt-produto").innerHTML = 1;
+                elemento.classList.add("produto-selecionado");
+            }
+            
+            
+            
+        }
+    </script>
+</body>
+</html>
