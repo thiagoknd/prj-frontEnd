@@ -6,7 +6,7 @@
     {"nome:":"Tenis Nike","img:":"https://thiagoknd.github.io/prj-frontEnd/prj-vendas/fake-api/img/tenisNike.jpg","valor":900},
     {"nome:":"Tenis Olympikus","img:":"https://thiagoknd.github.io/prj-frontEnd/prj-vendas/fake-api/img/tenisOlimp.jpg","valor":500},
     {"nome:":"Tenis Puma","img:":"https://thiagoknd.github.io/prj-frontEnd/prj-vendas/fake-api/img/tenisPuma.jpg","valor":450},
-    {"nome:":"Tenis Under","img:":"https://thiagoknd.github.io/prj-frontEnd/prj-vendas/fake-api/img/tenisUnder.jpg","valor":320},
+    {"nome:":"Tenis Under","img:":"https://thiagoknd.github.io/prj-frontEnd/prj-vendas/fake-api/img/tenisUnder.jpg","valor":320}
     
     
 ]
