@@ -132,6 +132,7 @@
             xhttp.send();
             xhttp.onload = function(){
                 lsProduto = this.responseText;
+                lsProduto = JSON.parse(lsProduto);
             
                 
             }
